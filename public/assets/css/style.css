@@ -1906,166 +1906,321 @@ th table th {
     - login css start
 ----------------------------------------*/
 .mybazar-login-section {
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    --login-navy: #101a3d;
+    --login-navy-light: #16224f;
+    --login-cream: #f6f1e7;
+    --login-gold-start: #e9c273;
+    --login-gold-end: #d4a24e;
+    min-height: 100vh;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    background-image: url("../../assets/images/bg/login-bg.jpg");
-    background-size: cover;
-    background-position: center;
+    justify-content: center;
+    background-color: var(--login-cream);
+    padding: 60px 24px;
 }
 
-.mybazar-login-section .mybazar-login-wrapper {
-    max-width: 550px;
-    margin: 0 auto;
+.mybazar-login-section .login-container {
+    max-width: 1180px;
     width: 100%;
-    position: relative;
-    z-index: 2;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 64px;
+    align-items: center;
 }
 
-.mybazar-login-section .login-wrapper {
+/* left intro column */
+.mybazar-login-section .login-intro {
+    padding-right: 8px;
+}
+
+.mybazar-login-section .login-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 44px;
+}
+
+.mybazar-login-section .login-brand-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--login-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.mybazar-login-section .login-brand-icon img {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(1);
+}
+
+.mybazar-login-section .login-brand-text {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #5b6478;
+}
+
+.mybazar-login-section .login-headline {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 76px;
+    line-height: 1;
+    color: #e7ddc8;
+    margin-bottom: 18px;
+}
+
+.mybazar-login-section .login-subline {
+    font-size: 22px;
+    color: #2b3350;
+    margin-bottom: 18px;
+}
+
+.mybazar-login-section .login-subline strong {
+    color: var(--login-navy);
+}
+
+.mybazar-login-section .login-description {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #6b7182;
+    max-width: 420px;
+    margin-bottom: 32px;
+}
+
+.mybazar-login-section .login-features {
+    border-top: 1px solid rgba(16, 26, 61, 0.12);
+    padding-top: 24px;
+}
+
+.mybazar-login-section .login-features-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #8a90a2;
+    margin-bottom: 14px;
+}
+
+.mybazar-login-section .login-pill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mybazar-login-section .login-pill {
+    font-size: 13px;
+    color: #2b3350;
     background: #fff;
-    -webkit-box-shadow: 0px 20px 50px rgba(12, 25, 40, 0.1);
-    box-shadow: 0px 20px 50px rgba(12, 25, 40, 0.1);
-    border-radius: 30px;
-    padding: 30px;
+    border: 1px solid rgba(16, 26, 61, 0.12);
+    border-radius: 999px;
+    padding: 8px 16px;
+}
+
+.mybazar-login-section .login-footer-credit {
+    margin-top: 48px;
+    font-size: 12px;
+    color: #9a9fae;
+}
+
+.mybazar-login-section .login-footer-credit strong {
+    color: #6b7182;
+}
+
+/* right card column */
+.mybazar-login-section .login-wrapper {
+    background: linear-gradient(160deg, var(--login-navy-light), var(--login-navy));
+    border-radius: 20px;
+    padding: 44px 40px;
+    box-shadow: 0 30px 60px rgba(16, 26, 61, 0.25);
+}
+
+.mybazar-login-section .login-welcome-back {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #8892b0;
+    margin-bottom: 8px;
 }
 
 .mybazar-login-section .login-wrapper h2 {
-    text-align: center;
+    font-size: 28px;
     font-weight: 600;
-    font-size: 30px;
-    line-height: 38px;
-    color: #101828;
+    color: #fff;
+    margin-bottom: 28px;
 }
 
-.mybazar-login-section .login-wrapper h2 span {
-    color: #292be9;
-}
-
-.mybazar-login-section .login-wrapper h6 {
-    text-align: center;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    color: #344054;
+.mybazar-login-section .login-wrapper .form-group {
     margin-bottom: 20px;
 }
 
-.mybazar-login-section .login-wrapper p {
-    color: #0c1928;
-    opacity: 0.5;
-    text-align: center;
+.mybazar-login-section .login-wrapper label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #8892b0;
+    margin-bottom: 8px;
 }
 
 .mybazar-login-section .login-wrapper .input-group {
     position: relative;
     margin: 0;
-    margin-top: 10px;
-    border: 1px solid #98a2b3;
-    background-color: #f4f5f7;
-}
-
-.mybazar-login-section .login-wrapper .input-group span {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    z-index: 5;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
 }
 
 .mybazar-login-section .login-wrapper .input-group .hide-pass {
     position: absolute;
     top: 50%;
-    left: auto;
     right: 15px;
     z-index: 5;
-    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
     transform: translate(0, -50%);
 }
 
 .mybazar-login-section .login-wrapper .input-group .form-control {
-    padding: 12px 15px;
-    -webkit-box-shadow: none;
+    padding: 12px 16px;
     box-shadow: none;
-    padding-left: 12px;
-    height: 40px;
-    border-radius: 0px !important;
+    height: 46px;
+    border-radius: 8px !important;
     font-size: 14px;
-}
-
-.mybazar-login-section .login-wrapper .input-group input {
-    border-left: 1px solid #98a2b3 !important;
+    background: transparent;
     border: none;
-    margin-left: 50px !important;
+    color: #fff;
 }
 
-.mybazar-login-section .login-btn {
-    display: block;
-    font-size: 16px;
-    color: #fff !important;
-    background: #292be9;
-    border-radius: 5px;
-    padding: 0px 10px;
-    width: 100%;
-    margin-top: 20px;
-    border: 1px solid transparent;
-    height: 35px;
+.mybazar-login-section .login-wrapper .input-group .form-control::placeholder {
+    color: #6b7390;
 }
 
-.mybazar-login-section .login-btn:hover,
-.mybazar-login-section .login-btn:focus {
-    background: #fff !important;
-    color: #000 !important;
-    border: 1px solid #292be9;
-}
-
-.mybazar-login-section .button-group {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto 10px auto 10px auto 10px auto;
-    grid-template-columns: auto auto auto auto;
-    gap: 10px;
+.mybazar-login-section .login-wrapper .input-group .form-control:focus {
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .mybazar-login-section .forget-password {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 24px;
 }
 
-.mybazar-login-section .back-to-login {
+.mybazar-login-section .forget-password label {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.mybazar-login-section .forget-password a,
-.mybazar-login-section .back-to-login a {
-    font-size: 16px;
+    gap: 8px;
+    margin: 0;
+    font-size: 13px;
     font-weight: 400;
-    color: #0c1928;
-    display: inline-block;
-    margin: 5px;
+    color: #b7bdd1;
 }
 
-.mybazar-login-section .forget-password a:hover,
-.mybazar-login-section .back-to-login a:hover {
+.mybazar-login-section .forget-password a {
+    font-size: 13px;
+    color: #e9c273;
+}
+
+.mybazar-login-section .forget-password a:hover {
     text-decoration: underline;
 }
 
+.mybazar-login-section .login-btn {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1c1204 !important;
+    background: linear-gradient(135deg, var(--login-gold-start), var(--login-gold-end));
+    border-radius: 8px;
+    width: 100%;
+    height: 48px;
+    border: none;
+    transition: filter 0.15s ease, transform 0.15s ease;
+}
+
+.mybazar-login-section .login-btn:hover,
+.mybazar-login-section .login-btn:focus {
+    filter: brightness(1.05);
+    transform: translateY(-1px);
+    color: #1c1204 !important;
+}
+
+.mybazar-login-section .login-quickfill {
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mybazar-login-section .login-quickfill-label {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #6b7390;
+    margin-bottom: 14px;
+}
+
+.mybazar-login-section .button-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
 .mybazar-login-section .login-btn-group {
-    min-width: 115px !important;
-    padding: 5px 0px !important;
-    border-radius: 5px !important;
+    min-width: 0;
+    padding: 9px 6px;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #d7dbea;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.mybazar-login-section .login-btn-group:hover {
+    background: rgba(233, 194, 115, 0.15);
+    border-color: rgba(233, 194, 115, 0.4);
+    color: #f3e0b3;
+}
+
+@media (max-width: 991px) {
+    .mybazar-login-section .login-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .mybazar-login-section .login-headline {
+        font-size: 56px;
+    }
+
+    .mybazar-login-section .login-intro {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .mybazar-login-section .login-brand,
+    .mybazar-login-section .login-pill-list {
+        justify-content: center;
+    }
+
+    .mybazar-login-section .login-features {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .mybazar-login-section .login-wrapper {
+        padding: 32px 24px;
+    }
+
+    .mybazar-login-section .button-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* image upload */
