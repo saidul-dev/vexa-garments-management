@@ -483,6 +483,21 @@ svg {
     width: 22px;
 }
 
+.side-bar.active .side-bar-section-label {
+    height: 1px;
+    padding: 0;
+    margin: 10px 0 !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: -9999px;
+}
+
+.side-bar.active:hover .side-bar-section-label {
+    height: auto;
+    padding: 14px 20px 6px;
+    text-indent: 0;
+}
+
 .side-bar.active:hover {
     width: 300px;
 }
