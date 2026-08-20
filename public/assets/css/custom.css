@@ -55,7 +55,7 @@
 }
 
 .avatar {
-    background: #292be9;
+    background: var(--brand-navy);
     border-radius: 50%;
     color: #e3eaef;
     display: inline-block;
@@ -84,7 +84,7 @@
 }
 
 .btn-custom-warning {
-    background-color: #292be9 !important;
+    background-color: var(--brand-navy) !important;
     color: #fff;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .custom-warning-color {
-    color: #292be9;
+    color: var(--brand-navy);
 }
 
 .roles-permissions table td {
@@ -214,22 +214,22 @@
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-    background-color: #292be9;
+    background-color: var(--brand-navy);
 }
 
 .nav-link {
-    color: #292be9;
+    color: var(--brand-navy);
 }
 
 .role-reset-btn {
     font-weight: bold;
-    color: #292be9;
-    border: 1px solid #292be9;
+    color: var(--brand-navy);
+    border: 1px solid var(--brand-navy);
     padding: 0.2rem 0.5rem !important;
 }
 
 .role-reset-btn:hover {
     color: #fff !important;
-    background-color: #292be9;
+    background-color: var(--brand-navy);
     border: 1px solid transparent;
 }

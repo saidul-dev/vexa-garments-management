@@ -5,11 +5,15 @@
     </div>
     <div class="side-bar-manu">
         <ul>
+            <li class="side-bar-section-label">{{ __('Main') }}</li>
+
             @canany(['dashboard-read'])
             <li class="{{ Request::routeIs('dashboard') ? 'active' : ''}}">
                 <a href="{{ route('dashboard') }}" class="active"><span class="sidebar-icon"><img src="{{ asset('assets/images/icons/home.svg') }}" alt="home.svg"></span>{{__('Dashboard')}}</a>
             </li>
             @endcanany
+
+            <li class="side-bar-section-label">{{ __('Operations') }}</li>
 
             @canany(['orders-read', 'costings-read', 'budgets-read', 'samples-read', 'bookings-read', 'shipments-read', 'productions-read'])
             <li class="dropdown {{ Request::routeIs('bookings.index','bookings.edit','orders.index','orders.edit','costings.index','costings.edit','budgets.index','budgets.edit','samples.index','samples.edit','samples.show','shipments.index','shipments.edit','productions.create','productions.index','productions.edit', 'order.history') ? 'active' : '' }}"><a href="#"> <span class="sidebar-icon"><img src="{{ asset('assets/images/icons/order.svg') }}" alt=""></span>
@@ -247,6 +251,8 @@
                 </ul>
             </li>
             @endcanany
+
+            <li class="side-bar-section-label">{{ __('Administration') }}</li>
 
             @canany(['roles-read', 'permissions-read'])
             <li class="dropdown {{ Request::routeIs('roles.index', 'permissions.index', 'roles.create', 'roles.edit') ? 'active' : '' }}">
