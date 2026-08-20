@@ -1,6 +1,14 @@
 <nav class="side-bar">
     <div class="side-bar-logo">
-        <a href="javascript:void(0)"><img src="{{ asset( get_option('company')['logo'] ?? 'assets/images/logo/backend_logo.png') }}" alt="Logo"></a>
+        <a href="javascript:void(0)" class="side-bar-brand">
+            <span class="side-bar-brand-icon">
+                <img src="{{ asset( get_option('company')['logo'] ?? 'assets/images/logo/backend_logo.png') }}" alt="Logo">
+            </span>
+            <span class="side-bar-brand-text">
+                <span class="side-bar-brand-name">{{ get_option('company')['name'] ?? env('APP_NAME') }}</span>
+                <small>{{ __('Enterprise Suite') }}</small>
+            </span>
+        </a>
         <button class="close-btn"><i class="fal fa-times"></i></button>
     </div>
     <div class="side-bar-manu">
@@ -294,4 +302,6 @@
             @endcanany
         </ul>
     </div>
+    <hr>
+    <div class="side-bar-version">v2.0 - Phase 2 -- Sellable Core</div>
 </nav>
