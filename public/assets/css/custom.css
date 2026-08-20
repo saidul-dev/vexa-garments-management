@@ -1,0 +1,235 @@
+.w-17 {
+    width: 17px;
+}
+
+.w-14 {
+    width: 14px;
+}
+
+.h-16 {
+    height: 16px;
+}
+
+.h-17 {
+    height: 17px;
+}
+
+.width-50 {
+    width: 50px !important;
+}
+
+.width-85 {
+    width: 85px !important;
+}
+
+.indicate-text {
+    font-size: 12px;
+    color: red;
+}
+
+.form-control.error {
+    border-color: red;
+    padding: 0.375rem 0.75rem;
+}
+
+.image-wrapper.error {
+    border-color: red;
+    padding: 0.375rem 0.75rem;
+}
+
+.error-alert {
+    font-size: 11px;
+    color: red;
+}
+
+.error {
+    color: red !important;
+}
+
+.budget-form .form-control[readonly] {
+    background-color: #fff !important;
+}
+
+.budget-form ::placeholder {
+    font-size: 12px;
+}
+
+.avatar {
+    background: #292be9;
+    border-radius: 50%;
+    color: #e3eaef;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    position: relative;
+    vertical-align: middle;
+    line-height: 1.28;
+    height: 45px;
+    width: 45px;
+}
+
+.avatar.avatar-sm {
+    font-size: 12px;
+    height: 30px;
+    width: 30px;
+}
+
+.avatar img {
+    border-radius: 50%;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.btn-custom-warning {
+    background-color: #292be9 !important;
+    color: #fff;
+}
+
+.btn-custom-warning:hover {
+    color: #fff;
+}
+
+.custom-warning-color {
+    color: #292be9;
+}
+
+.roles-permissions table td {
+    color: black;
+}
+
+.img-preview {
+    margin-top: 4px;
+    height: auto;
+    width: 100px;
+}
+
+.side-bar-logo img {
+    height: auto;
+}
+
+.folders-files tr a {
+    font-size: 18px !important;
+}
+
+.gradient-row {
+    background: linear-gradient(270deg, #dbe4df 0%, #65e4a6 50%, #ffffff 100%);
+}
+
+@media print {
+    .table-two thead td {
+        padding: 0px !important;
+    }
+}
+
+.order-form-section label {
+    left: 10px;
+    white-space: nowrap;
+}
+
+.table-form-section .responsive-table,
+.party-list-folder-table {
+    min-height: unset !important;
+}
+
+.custom-dropdown-action .dropdown-menu a {
+    padding: 6px 15px !important;
+}
+
+.table-title-three h5 {
+    font-weight: 600 !important;
+}
+
+.loss-profit-custom-color1 {
+    background-color: rgba(255, 132, 0, 0.15);
+}
+
+.loss-profit-custom-color2 {
+    background-color: rgba(255, 181, 101, 1);
+    font-weight: bold;
+}
+
+.production-wrap {
+    padding-right: 60px;
+}
+
+.print-wrapper .responsive-table {
+    min-height: unset;
+}
+
+.print-wrapper .table th,
+.print-wrapper .table td {
+    white-space: nowrap;
+}
+
+.print-wrapper {
+    min-height: 700px !important;
+}
+
+.table-header h3,
+.table-header h4 {
+    font-weight: 700;
+}
+
+.erp-new-invice .invice-detaisl {
+    padding: 20px 0;
+}
+
+.commercial-invoice {
+    margin-bottom: 30px;
+}
+
+.invoice-payment-details {
+    margin-top: 40px;
+}
+
+.erp-new-invice {
+    min-height: 650px !important;
+}
+
+.dashboard-card-body strong {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e7e7e;
+}
+
+#monthly-statistics {
+    width: 100% !important;
+    max-height: 290px !important;
+    min-height: 210px;
+}
+
+#salesRatio {
+    width: 100% !important;
+    max-height: 290px !important;
+    min-height: 210px;
+}
+
+#sales-by-country {
+    width: 100% !important;
+    max-height: 220px !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: #292be9;
+}
+
+.nav-link {
+    color: #292be9;
+}
+
+.role-reset-btn {
+    font-weight: bold;
+    color: #292be9;
+    border: 1px solid #292be9;
+    padding: 0.2rem 0.5rem !important;
+}
+
+.role-reset-btn:hover {
+    color: #fff !important;
+    background-color: #292be9;
+    border: 1px solid transparent;
+}
