@@ -9,23 +9,23 @@
         <div class="login-intro">
             <div class="login-brand">
                 <span class="login-brand-icon"><img src="{{ asset('assets/images/logo/logo.svg') }}" alt="{{ env('APP_NAME') }}"></span>
-                <span class="login-brand-text">{{ strtoupper(__('Unified ERP for Retail, Wholesale & Online Business')) }}</span>
+                <span class="login-brand-text">{{ strtoupper(__('Unified ERP for Garment Manufacturing & Export')) }}</span>
             </div>
 
             <h1 class="login-headline">{{ __('Sign in.') }}</h1>
-            <p class="login-subline">{{ __('Every sale. Every transaction.') }} <strong>{{ __('One system.') }}</strong></p>
+            <p class="login-subline">{{ __('Every order. Every shipment.') }} <strong>{{ __('One system.') }}</strong></p>
             <p class="login-description">
-                {{ __('The operational backbone for modern businesses — from purchasing and inventory to accounting, POS, and eCommerce, all in one platform.') }}
+                {{ __('The operational backbone for garment manufacturers — from booking and costing to production, shipment, accounts, and HR, all in one platform.') }}
             </p>
 
             <div class="login-features">
                 <span class="login-features-label">{{ __("What's Inside") }}</span>
                 <div class="login-pill-list">
-                    <span class="login-pill">{{ __('Purchase, Sales & POS') }}</span>
-                    <span class="login-pill">{{ __('Inventory & Multi-Warehouse') }}</span>
-                    <span class="login-pill">{{ __('E-commerce & Delivery') }}</span>
+                    <span class="login-pill">{{ __('Orders, Costing & Budgets') }}</span>
+                    <span class="login-pill">{{ __('Samples & Bookings') }}</span>
+                    <span class="login-pill">{{ __('Production & Shipments') }}</span>
                     <span class="login-pill">{{ __('Accounts & Reports') }}</span>
-                    <span class="login-pill">{{ __('Customer & Supplier Management') }}</span>
+                    <span class="login-pill">{{ __('Party & Accessory Management') }}</span>
                     <span class="login-pill">{{ __('HRM') }}</span>
                 </div>
             </div>
