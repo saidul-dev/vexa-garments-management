@@ -21,7 +21,6 @@ jobs:
             php8.2 /usr/local/bin/composer install --no-dev --optimize-autoloader
             php8.2 artisan migrate --force
             php8.2 artisan config:cache
-            php8.2 artisan route:cache
             php8.2 artisan view:cache
             sudo chown -R www-data:www-data /var/www/apparelsuit.vexasoft.net
             sudo systemctl reload php8.2-fpm
